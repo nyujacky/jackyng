@@ -1324,6 +1324,172 @@
 			border-left: 0;
 		}
 
+		.links {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+			background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+			background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+			background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+			max-width: 100%;
+			text-align: center;
+		}
+
+			.links > * {
+				-moz-transition: opacity 0.325s ease-in-out;
+				-webkit-transition: opacity 0.325s ease-in-out;
+				-ms-transition: opacity 0.325s ease-in-out;
+				transition: opacity 0.325s ease-in-out;
+				position: relative;
+				margin-top: 3.5rem;
+			}
+
+				.links > *:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: calc(-3.5rem - 1px);
+					left: calc(50% - 1px);
+					width: 1px;
+					height: calc(3.5rem + 1px);
+					background: #ffffff;
+				}
+
+			.links > :first-child {
+				margin-top: 0;
+			}
+
+				.links > :first-child:before {
+					display: none;
+				}
+
+			.links .logo {
+				width: 5.5rem;
+				height: 5.5rem;
+				line-height: 5.5rem;
+				border: solid 1px #ffffff;
+				border-radius: 100%;
+			}
+
+				.links .logo .icon:before {
+					font-size: 2rem;
+				}
+
+			.links .content {
+				border-style: solid;
+				border-color: #ffffff;
+				border-top-width: 1px;
+				border-bottom-width: 1px;
+				max-width: 100%;
+			}
+
+				.links .content .inner {
+					-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+					-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+					-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+					transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+					-moz-transition-delay: 0.25s;
+					-webkit-transition-delay: 0.25s;
+					-ms-transition-delay: 0.25s;
+					transition-delay: 0.25s;
+					padding: 3rem 2rem;
+					max-height: 40rem;
+					overflow: hidden;
+				}
+
+					.links .content .inner > :last-child {
+						margin-bottom: 0;
+					}
+
+				.links .content p {
+					text-transform: uppercase;
+					letter-spacing: 0.2rem;
+					font-size: 0.8rem;
+					line-height: 2;
+				}
+
+			.links nav ul {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				margin-bottom: 0;
+				list-style: none;
+				padding-left: 0;
+				border: solid 1px #ffffff;
+				border-radius: 4px;
+			}
+
+				.links nav ul li {
+					padding-left: 0;
+					border-left: solid 1px #ffffff;
+				}
+
+					.links nav ul li:first-child {
+						border-left: 0;
+					}
+
+					.links nav ul li a {
+						display: block;
+						min-width: 7.5rem;
+						height: 2.75rem;
+						line-height: 2.75rem;
+						padding: 0 1.25rem 0 1.45rem;
+						text-transform: uppercase;
+						letter-spacing: 0.2rem;
+						font-size: 0.8rem;
+						border-bottom: 0;
+					}
+
+						.links nav ul li a:hover {
+							background-color: rgba(255, 255, 255, 0.075);
+						}
+
+						.links nav ul li a:active {
+							background-color: rgba(255, 255, 255, 0.175);
+						}
+
+			.links nav.use-middle:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: calc(50% - 1px);
+				width: 1px;
+				height: 100%;
+				background: #ffffff;
+			}
+
+			.links nav.use-middle ul li.is-middle {
+				border-left: 0;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
 			-webkit-transform: scale(0.95);
