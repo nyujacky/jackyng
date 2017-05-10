@@ -1067,14 +1067,14 @@
 		}
 
 		#bg:before {
-			-moz-transition: background-color 2s ease-in-out;
-			-webkit-transition: background-color 2s ease-in-out;
-			-ms-transition: background-color 2s ease-in-out;
-			transition: background-color 2s ease-in-out;
-			-moz-transition-delay: .0s;
-			-webkit-transition-delay: .0s;
-			-ms-transition-delay: .0s;
-			transition-delay: .0s;
+			-moz-transition: background-color 2.5s ease-in-out;
+			-webkit-transition: background-color 2.5s ease-in-out;
+			-ms-transition: background-color 2.5s ease-in-out;
+			transition: background-color 2.5s ease-in-out;
+			-moz-transition-delay: 0.0s;
+			-webkit-transition-delay: 0.0s;
+			-ms-transition-delay: 0.0s;
+			transition-delay: 0.0s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.3), rgba(19, 21, 25, 0.3)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
