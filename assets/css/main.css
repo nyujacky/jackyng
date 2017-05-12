@@ -718,7 +718,10 @@
 					border-top: 0;
 					padding-top: 0;
 				}
-
+		.page-icons{
+			display: flex;
+			justify-content: center;
+		}
 		ul.icons {
 			cursor: default;
 			list-style: none;
